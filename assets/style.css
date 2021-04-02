@@ -41,6 +41,10 @@ body {
     height: 146px;
 }
 
+.img:last-child{
+    margin-right: 10%;
+}
+
 /* images background */
 .mex {
     background-image: url(./images/Mexican_food.jpeg);
@@ -81,6 +85,7 @@ body {
 .btn-cont {
     text-align: right;
     padding: 5px 20px;
+    width: 100%;
 }
 
 /* Restauant near by buttons */
@@ -90,6 +95,7 @@ body {
     outline: none;
     display: inline;
     display: none;
+    margin-right: 7%;
 }
 
 /* Main container where recipe is to be displayed */
