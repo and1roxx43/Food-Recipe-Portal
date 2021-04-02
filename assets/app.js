@@ -14,15 +14,17 @@ const indi = document.querySelector('.indian');
 const burger = document.querySelector('.comfort');
 const findNearBy = document.querySelectorAll('.btn');
 
+
+// Declare map
 var map;
 
+// event click on each images
 mex.addEventListener('click', function(){
     mexican.setAttribute('style', 'display: inline;');
     ital.style.pointerEvents = 'none';
     asia.style.pointerEvents = 'none';
     indi.style.pointerEvents = 'none';
     burger.style.pointerEvents = 'none';
-    // window.document.body.style.pointerEvents = 'none';
 });
 
 ital.addEventListener('click', function(){
@@ -63,6 +65,7 @@ mexican.addEventListener('click', function(){
 
 mapContainer.style.display = "flex";
 
+// find each restaurants based on on query in current location
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitude, lng: longitude},
         zoom: 12,
@@ -169,7 +172,7 @@ comfort.addEventListener('click', function(){
 
 
 
-// ---------------------------
+// ----- Find current location ---------
 function success(pos){
     var crd = pos.coords;
     latitude = crd.latitude;
@@ -177,7 +180,6 @@ function success(pos){
     longitude = crd.longitude;
     console.log(longitude);
   
-    var latLong = pos.coords.latitude + ', ' + pos.coords.longitude;
   }
   
   function error(err) {
@@ -187,7 +189,7 @@ function success(pos){
   navigator.geolocation.getCurrentPosition(success, error);
 
   
-
+// If status is ok, markers are placed in each location 
 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -198,6 +200,8 @@ function callback(results, status) {
   }
 }
 
+
+// Place markers based on location
 function createMarker(place) {
 
   var placeLoc = place.geometry.location;
@@ -210,14 +214,15 @@ function createMarker(place) {
   
 }
 
+
+// Close map event
 closeMap.addEventListener('click', function(){
 
     mapContainer.style.display = 'none';
 
+    location.reload();
+
     for(var i = 0; i < findNearBy.length; i++){
         findNearBy[i].style.display = 'none';
     }
-    location.reload();
-
-
-})
+});
