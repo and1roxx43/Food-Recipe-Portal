@@ -1,0 +1,151 @@
+/* Google font Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+/* intro header */
+#intro {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+/* food header images */
+#food-image-hd{
+    background-color: plum;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+/* food images */
+.img {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 5px 5px 5px lightgrey;
+    width: 145px;
+    height: 146px;
+}
+
+/* images background */
+.mex {
+    background-image: url(./images/Mexican_food.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.italian {
+    background-image: url(./images/italian.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.asian {
+    background-image: url(./images/chinese.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indian {
+    background-image: url(./images/Indian.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.comfort {
+    background-image: url(./images/burger.jpeg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Restaurants near by container buttons */
+.btn-cont {
+    text-align: right;
+    padding: 5px 20px;
+}
+
+/* Restauant near by buttons */
+.btn {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    display: inline;
+    display: none;
+}
+
+/* Main container where recipe is to be displayed */
+#main-container {
+    background-color: rgb(95, 24, 71);
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 10px; */
+}
+
+/* Map container */
+.map-container {
+    border: 2px solid rgb(199, 156, 197);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+
+/* Map header */
+#map-header {
+    background-color: orchid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+/* Map Title */
+.map-title {
+    font-size: 1rem;
+}
+
+/* Map content */
+#map {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Close map */
+#close-map {
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Hover state on close button */
+#close-map:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
