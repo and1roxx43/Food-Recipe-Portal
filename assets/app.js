@@ -212,7 +212,7 @@ function success(pos){
 // If status is ok, markers are placed in each location 
 
 function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
     console.log(results.length);
 
     results.forEach(element => {
