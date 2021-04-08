@@ -62,8 +62,6 @@ burger.addEventListener('click', function(){
 });
 
 function Opacity(){
-  
-  // mapContainer.style.opacity = '1';
   bodyOpacity.setAttribute('style', 'display: block; opacity: 0.5;');
 }
 
