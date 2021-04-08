@@ -27,7 +27,9 @@ body {
     background-color: plum;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 10px;
+    width: 100%;
 }
 
 #food-image-hd div{
@@ -87,11 +89,12 @@ body {
 }
 
 #search {
+    color: #999;
     width: 145px;
     height: 146px;
-    border-radius: 100px;
+    border-radius: 100%;
     font-size: 1.2rem;
-    background-color: lightgreen;
+    background-color: #90ee90;
     box-shadow: 5px 5px 5px lightgrey;
 }
 
@@ -102,7 +105,7 @@ body {
     width: 100%;
 }
 
-/* Restauant near by buttons */
+/* Restaurant near by buttons */
 .btn {
     background-color: #fff;
     border: none;
@@ -116,8 +119,7 @@ body {
 #main-container {
     background-color: rgb(95, 24, 71);
     width: 100vw;
-    height: 75vh;
-    /* margin-top: 10px; */
+    height: 70vh;
 }
 
 /* Map container */
@@ -138,7 +140,7 @@ body {
 
 /* Map header */
 #map-header {
-    background-color: orchid;
+    background-color: #da70d6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,7 +174,7 @@ body {
 /* opacity */
 
 .body-opacity {
-    background-color: grey;
+    background-color: #808080;
     position: absolute;
     top: 0;
     left: 0;
@@ -183,7 +185,7 @@ body {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     color: #000;
     display: flex;
     justify-content: center;
