@@ -7,6 +7,8 @@ const closeMap = document.getElementById('close-map');
 
 const mapContainer = document.querySelector('.map-container');
 
+const opacity = document.querySelector('.opacity');
+
 const mex = document.querySelector('.mex');
 const ital = document.querySelector('.italian');
 const asia = document.querySelector('.asian');
@@ -59,12 +61,18 @@ burger.addEventListener('click', function(){
     ital.style.pointerEvents = 'none';
 });
 
+function bodyOpacity(){
+  
+  mapContainer.style.opacity = '1';
+
+  opacity.setAttribute('style', 'display: block; opacity: 0.5;');
+}
+
+
 
 // click on find a near by restaurants
 mexican.addEventListener('click', function(){
-
-mapContainer.style.display = "flex";
-
+  mapContainer.style.display = "flex";
 // find each restaurants based on on query in current location
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitude, lng: longitude},
@@ -74,7 +82,7 @@ mapContainer.style.display = "flex";
         location: map.getCenter(),
         query: 'mexican',
         radius: 5000,
-        type: ['restaurant']
+        types: ['restaurant', 'cafe', 'food']
       }
     
       var service = new google.maps.places.PlacesService(map);
@@ -97,7 +105,7 @@ asian.addEventListener('click', function(){
         location: map.getCenter(),
         query: 'chinese',
         radius: 5000,
-        type: ['restaurant']
+        types: ['restaurant', 'cafe', 'food']
       }
     
       var service = new google.maps.places.PlacesService(map);
@@ -118,7 +126,7 @@ italian.addEventListener('click', function(){
         location: map.getCenter(),
         query: 'italian',
         radius: 5000,
-        type: ['restaurant']
+        types: ['restaurant', 'cafe', 'food']
       }
     
       var service = new google.maps.places.PlacesService(map);
@@ -140,7 +148,7 @@ indian.addEventListener('click', function(){
         location: map.getCenter(),
         query: 'indian',
         radius: 5000,
-        type: ['restaurant']
+        types: ['restaurant', 'cafe', 'food']
       }
     
       var service = new google.maps.places.PlacesService(map);
@@ -159,9 +167,9 @@ comfort.addEventListener('click', function(){
       });
       var request = {
         location: map.getCenter(),
-        query: 'burger',
+        query: 'burgers',
         radius: 5000,
-        type: ['restaurant']
+        types: ['restaurant', 'cafe', 'food']
       }
     
       var service = new google.maps.places.PlacesService(map);
