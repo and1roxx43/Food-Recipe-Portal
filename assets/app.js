@@ -16,6 +16,11 @@ const indi = document.querySelector('.indian');
 const burger = document.querySelector('.comfort');
 const findNearBy = document.querySelectorAll('.btn');
 
+// Dietary requirements 
+const vegetarians = document.getElementById('vegetarian');
+const glutenfree = document.getElementById('glutenFree');
+const btnSearch = document.getElementById('search');
+
 
 // Declare map
 var map;
@@ -27,6 +32,8 @@ mex.addEventListener('click', function(){
     asia.setAttribute("disabled", true);
     indi.setAttribute("disabled", true);
     burger.setAttribute("disabled", true);
+    // vegetarians.setAttribute("disabled", true);
+    // glutenfree.setAttribute("disabled", true);
 });
 
 ital.addEventListener('click', function(){
@@ -211,9 +218,6 @@ function callback(results, status) {
     results.forEach(element => {
       createMarker(element);
     });
-    // for (var i = 0; i < results.length; i++) {
-    //   createMarker(results[i]);
-    // }
   }
 }
 
@@ -242,4 +246,4 @@ closeMap.addEventListener('click', function(){
     findNearBy.forEach(element => {
       element.setAttribute("disabled", true);
     })
-});
+  });
