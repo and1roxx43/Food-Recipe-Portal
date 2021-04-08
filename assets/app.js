@@ -23,42 +23,42 @@ var map;
 // event click on each images
 mex.addEventListener('click', function(){
     mexican.setAttribute('style', 'display: inline;');
-    ital.style.pointerEvents = 'none';
-    asia.style.pointerEvents = 'none';
-    indi.style.pointerEvents = 'none';
-    burger.style.pointerEvents = 'none';
+    ital.setAttribute("disabled", true);
+    asia.setAttribute("disabled", true);
+    indi.setAttribute("disabled", true);
+    burger.setAttribute("disabled", true);
 });
 
 ital.addEventListener('click', function(){
     italian.setAttribute('style', 'display: inline;');
-    mex.style.pointerEvents = 'none';
-    asia.style.pointerEvents = 'none';
-    indi.style.pointerEvents = 'none';
-    burger.style.pointerEvents = 'none';
+    mex.setAttribute("disabled", true);
+    asia.setAttribute("disabled", true);
+    indi.setAttribute("disabled", true);
+    burger.setAttribute("disabled", true);
 });
 
 asia.addEventListener('click', function(){
     asian.setAttribute('style', 'display: inline;');
-    mex.style.pointerEvents = 'none';
-    ital.style.pointerEvents = 'none';
-    indi.style.pointerEvents = 'none';
-    burger.style.pointerEvents = 'none';
+    mex.setAttribute("disabled", true);
+    ital.setAttribute("disabled", true);
+    indi.setAttribute("disabled", true);
+    burger.setAttribute("disabled", true);
 });
 
 indi.addEventListener('click', function(){
     indian.setAttribute('style', 'display: inline;');
-    mex.style.pointerEvents = 'none';
-    asia.style.pointerEvents = 'none';
-    ital.style.pointerEvents = 'none';
-    burger.style.pointerEvents = 'none';
+    mex.setAttribute("disabled", true);
+    asia.setAttribute("disabled", true);
+    ital.setAttribute("disabled", true);
+    burger.setAttribute("disabled", true);
 });
 
 burger.addEventListener('click', function(){
     comfort.setAttribute('style', 'display: inline;');
-    mex.style.pointerEvents = 'none';
-    asia.style.pointerEvents = 'none';
-    indi.style.pointerEvents = 'none';
-    ital.style.pointerEvents = 'none';
+    mex.setAttribute("disabled", true);
+    asia.setAttribute("disabled", true);
+    indi.setAttribute("disabled", true);
+    ital.setAttribute("disabled", true);
 });
 
 function Opacity(){
@@ -207,9 +207,13 @@ function success(pos){
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     console.log(results.length);
-    for (var i = 0; i < results.length; i++) {
-      createMarker(results[i]);
-    }
+
+    results.forEach(element => {
+      createMarker(element);
+    });
+    // for (var i = 0; i < results.length; i++) {
+    //   createMarker(results[i]);
+    // }
   }
 }
 
@@ -231,11 +235,11 @@ function createMarker(place) {
 // Close map event
 closeMap.addEventListener('click', function(){
 
-    mapContainer.style.display = 'none';
+    mapContainer.setAttribute("disabled", true);
 
     location.reload();
 
-    for(var i = 0; i < findNearBy.length; i++){
-        findNearBy[i].style.display = 'none';
-    }
+    findNearBy.forEach(element => {
+      element.setAttribute("disabled", true);
+    })
 });
