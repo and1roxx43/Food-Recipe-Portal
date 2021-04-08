@@ -7,7 +7,7 @@ const closeMap = document.getElementById('close-map');
 
 const mapContainer = document.querySelector('.map-container');
 
-const opacity = document.querySelector('.opacity');
+const bodyOpacity = document.querySelector('.body-opacity');
 
 const mex = document.querySelector('.mex');
 const ital = document.querySelector('.italian');
@@ -61,18 +61,19 @@ burger.addEventListener('click', function(){
     ital.style.pointerEvents = 'none';
 });
 
-function bodyOpacity(){
+function Opacity(){
   
-  mapContainer.style.opacity = '1';
-
-  opacity.setAttribute('style', 'display: block; opacity: 0.5;');
+  // mapContainer.style.opacity = '1';
+  bodyOpacity.setAttribute('style', 'display: block; opacity: 0.5;');
 }
 
 
 
 // click on find a near by restaurants
 mexican.addEventListener('click', function(){
-  mapContainer.style.display = "flex";
+
+  Opacity();
+    mapContainer.style.display = "flex";
 // find each restaurants based on on query in current location
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: latitude, lng: longitude},
@@ -94,6 +95,7 @@ mexican.addEventListener('click', function(){
 
 asian.addEventListener('click', function(){
 
+  Opacity();
     mapContainer.style.display = "flex";
 
 
@@ -116,6 +118,7 @@ asian.addEventListener('click', function(){
 
 italian.addEventListener('click', function(){
 
+  Opacity();
     mapContainer.style.display = "flex";
 
     map = new google.maps.Map(document.getElementById("map"), {
@@ -136,6 +139,8 @@ italian.addEventListener('click', function(){
 });
 
 indian.addEventListener('click', function(){
+
+  Opacity();
 
     mapContainer.style.display = "flex";
 
@@ -158,6 +163,8 @@ indian.addEventListener('click', function(){
 });
 
 comfort.addEventListener('click', function(){
+
+  Opacity();
 
     mapContainer.style.display = "flex";
 
