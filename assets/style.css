@@ -24,7 +24,7 @@ body {
 
 /* food header images */
 #food-image-hd{
-    background-color: rgb(66, 18, 66);
+    background-color: #421242;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -139,12 +139,12 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
     display: none;
-    box-shadow: 20px 15px 10px #8b7a8b;
+    box-shadow: 20px 15px 10px #443b44;
 }
 
 /* Map header */
 #map-header {
-    background-color: #da70d6;
+    background-color: #330d32;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +171,7 @@ body {
 
 /* Hover state on close button */
 #close-map:hover {
-    color: #000;
+    color: #b8b2b2;
     transform: scale(1.1);
 }
 
