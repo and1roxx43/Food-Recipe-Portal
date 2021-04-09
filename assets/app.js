@@ -22,6 +22,11 @@ const glutenfree = document.getElementById('glutenFree');
 const btnSearch = document.getElementById('search');
 
 
+// Map place title header
+const place = document.createElement('p');
+const titleHeaderEl = document.getElementById('title')
+
+
 // Declare map
 var map;
 
@@ -95,6 +100,8 @@ mexican.addEventListener('click', function(){
     
       service.textSearch(request, callback);
 
+      place.textContent = "Mexican Restaurants near by...";
+      titleHeaderEl.append(place);
 });
 
 
@@ -119,6 +126,9 @@ asian.addEventListener('click', function(){
     
       service.textSearch(request, callback);
 
+      place.textContent = "Chinese Restaurants near by...";
+      titleHeaderEl.append(place);
+
 });
 
 italian.addEventListener('click', function(){
@@ -141,6 +151,8 @@ italian.addEventListener('click', function(){
     
       service.textSearch(request, callback);
 
+      place.textContent = "Italian Restaurants near by...";
+      titleHeaderEl.append(place);
 });
 
 indian.addEventListener('click', function(){
@@ -165,6 +177,8 @@ indian.addEventListener('click', function(){
     
       service.textSearch(request, callback);
 
+      place.textContent = "Indian Restaurants near by...";
+      titleHeaderEl.append(place);
 });
 
 comfort.addEventListener('click', function(){
@@ -187,6 +201,9 @@ comfort.addEventListener('click', function(){
       var service = new google.maps.places.PlacesService(map);
     
       service.textSearch(request, callback);
+
+      place.textContent = "Comfort food Restaurants near by...";
+      titleHeaderEl.append(place);
 
 });
 

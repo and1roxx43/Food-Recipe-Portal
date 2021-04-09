@@ -24,7 +24,7 @@ body {
 
 /* food header images */
 #food-image-hd{
-    background-color: plum;
+    background-color: rgb(66, 18, 66);
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -43,7 +43,7 @@ body {
     border-radius: 10px;
     font-size: 1.2rem;
     color: #fff;
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 20px 15px 10px #771d77;
     width: 145px;
     height: 146px;
 }
@@ -89,13 +89,15 @@ body {
 }
 
 #search {
-    color: #999;
+    color: #4d4b4b;
     width: 145px;
     height: 146px;
     border-radius: 100%;
     font-size: 1.2rem;
-    background-color: #90ee90;
-    box-shadow: 5px 5px 5px lightgrey;
+    outline: none;
+    border: 10px solid  #5f1847;
+    background-color: #b1abab;
+    /* box-shadow: 5px 5px 5px lightgrey;  */
 }
 
 /* Restaurants near by container buttons */
@@ -117,14 +119,15 @@ body {
 
 /* Main container where recipe is to be displayed */
 #main-container {
-    background-color: rgb(95, 24, 71);
+    background: url(./images/pots-vegetables-harvest.jpg) no-repeat center;
+    background-size: cover;
     width: 100vw;
     height: 70vh;
 }
 
 /* Map container */
 .map-container {
-    border: 2px solid rgb(199, 156, 197);
+    border: 2px solid #c79cc5;
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -136,6 +139,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
     display: none;
+    box-shadow: 20px 15px 10px #8b7a8b;
 }
 
 /* Map header */
@@ -182,14 +186,15 @@ body {
     bottom: 0;
     opacity: 0.8;
     display: none;
+    height: 102vh;
 }
 
 footer {
-    background-color: #d3d3d3;
+    background-color: #dfdede;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4%;
+    height: 4.5%;
 }
 
