@@ -126,7 +126,7 @@ asian.addEventListener('click', function(){
     
       service.textSearch(request, callback);
 
-      place.textContent = "Chinese Restaurants near by...";
+      place.textContent = "Asian Restaurants near by...";
       titleHeaderEl.append(place);
 
 });
