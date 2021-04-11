@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+
+    <div class="body-opacity"></div>
     <!-- intro -->
     <header id="intro">
         <section class="intro">
@@ -18,22 +20,22 @@
 
     <!-- Images content -->
     <header id="food-image-hd">
-        <div>
+        <div class="food-pic">
             <button class="img mex">Mexican</button>
         </div>
-        <div>
+        <div class="food-pic">
             <button class="img italian">Italian</button>
         </div>
-        <div>
+        <div class="food-pic">
             <button class="img asian">Asian</button>
         </div>
-        <div>
+        <div class="food-pic">
             <button class="img indian">Indian</button>
         </div>
-        <div>
+        <div class="food-pic">
             <button class="img comfort">Comfort Food</button>
         </div>
-        <div>
+        <div id="dietary">
             <h2>Dietary Requirements</h2>
             <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian,">
             <label for="vegetarian">Vegetarian</label>
@@ -43,9 +45,9 @@
         <div>
             <button id="search">Search</button>
         </div>
+        
     </header>
 
-    <hr>
 
     <!-- Hidden Restaurant Near by button -->
     <div class="btn-cont">
@@ -57,23 +59,21 @@
     </div>
     
 
-    <hr>
-
     <!-- Main content and map content -->
     <main id="main-container">
         <div class="map-container">
             <div id="map-header">
                 <!-- <div><h2 class="map-title">Restaurants near by</h2> </div> -->
                 <div id="title"></div>
-                <div id="close-map"><p>&times;</p></div>
+                <div id="close-map"><p id="times">&times;</p></div>
             </div>
         
-        <div id="map"></div>
+            <div id="map"></div>
         </div>
 
     </main>
     
-    <div class="body-opacity"></div>
+    <!-- <div class="body-opacity"></div> -->
 
     <footer>
         <p>The Food Recipe Portal &copy; 2021 Made by AKN</p>
