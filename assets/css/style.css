@@ -312,9 +312,8 @@ footer {
     .video-section{
         max-height: 400px;
         overflow-y: scroll;
-        width: 100%;
+        width: 95%;
     }
-
     .recipe-section{
         max-height: 400px;
         overflow-y: scroll;
