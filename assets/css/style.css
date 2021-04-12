@@ -54,35 +54,35 @@ body {
 
 /* images background */
 .mex {
-    background-image: url(./images/Mexican_food.jpeg);
+    background-image: url(./assets/images/Mexican_food.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
 }
 
 .italian {
-    background-image: url(./images/italian.jpeg);
+    background-image: url(./assets/images/italian.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
 }
 
 .asian {
-    background-image: url(./images/chinese.jpeg);
+    background-image: url(./assets/images/chinese.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
 }
 
 .indian {
-    background-image: url(./images/Indian.jpeg);
+    background-image: url(./assets/images/Indian.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
 }
 
 .comfort {
-    background-image: url(./images/burger.jpeg);
+    background-image: url(./assets/images/burger.jpeg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
@@ -117,7 +117,7 @@ body {
 
 /* Main container where recipe is to be displayed */
 #main-container {
-    background: url(./images/main-section-background.jpg) no-repeat center;
+    background: url(./assets/images/main-section-background.jpg) no-repeat center;
     background-size: cover;
     width: 100vw;
     height: 70vh;
