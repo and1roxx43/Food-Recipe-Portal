@@ -1,3 +1,4 @@
+\
 var mexican = document.getElementById('mexican');
 var asian = document.getElementById('asian');
 var italian = document.getElementById('italian');
@@ -37,7 +38,7 @@ const recipeAppId = '15a53fca';
 var map;
 
 var cuisineSelected = '';
-	
+
 //Declare video variables
 var mexicanVids = document.getElementById('mexicanVid')
 var italianVids = document.getElementById('italianVid')
@@ -220,6 +221,7 @@ closeMap.addEventListener('click', function() {
 //adding button evenet listener
 btnSearch.addEventListener('click', function() {
     recipeApiCall();
+    showVideos();
 });
 
 /**  Recipe api call */
@@ -291,25 +293,21 @@ function displayRecipeSection(data) {
 /**
  * function show youtube videos
  */
-function showVideos(){
+function showVideos() {
     mexicanVids.style.display = "none";
     italianVids.style.display = "none";
     asianVids.style.display = "none";
     indianVids.style.display = "none";
     comfortFoodVids.style.display = "none";
-      if (cuisineSelected == "mexican"){
+    if (cuisineSelected == "mexican") {
         mexicanVids.style.display = "block";
-      }
-      else if (cuisineSelected == "italian"){
+    } else if (cuisineSelected == "italian") {
         italianVids.style.display = "block";
-      }
-      else if (cuisineSelected == "asian"){
+    } else if (cuisineSelected == "asian") {
         asianVids.style.display = "block";
-      }
-      else if (cuisineSelected == "indian"){
+    } else if (cuisineSelected == "indian") {
         indianVids.style.display = "block";
-      }
-      else if (cuisineSelected == "american"){
+    } else if (cuisineSelected == "american") {
         comfortFoodVids.style.display = "block";
-      }
     }
+}
