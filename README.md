@@ -11,4 +11,10 @@ Below are the features
 
 ![Screenshot of Site](https://i.gyazo.com/5224d4f24a09df5d214223a6be9003bc.jpg)
 
+### Technologies Used
+Edamam Recipe Search API: https://developer.edamam.com/edamam-recipe-api
+
+Google Maps API: https://developers.google.com/maps/documentation/javascript/overview
+
+### Link to live application
 The application can be accessed at: https://and1roxx43.github.io/Food-Recipe-Portal/
