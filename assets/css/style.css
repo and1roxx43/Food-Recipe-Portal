@@ -248,15 +248,13 @@ footer {
     }
 
     #search {
-        color: #4d4b4b;
-        width: 125px;
-        height: 126px;
-        border-radius: 100%;
-        font-size: 1.2rem;
-        outline: none;
-        border: 10px solid  #5f1847;
-        background-color: #b1abab;
-        /* box-shadow: 5px 5px 5px lightgrey;  */
+        background-color: black;
+        border: none;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        color: white;
     }
 
     #main-container {
@@ -279,14 +277,13 @@ footer {
     }
     
     #search {
-        color: #4d4b4b;
-        width: 115px;
-        height: 116px;
-        border-radius: 100%;
-        font-size: 1.2rem;
-        outline: none;
-        border: 10px solid  #5f1847;
-        background-color: #b1abab;
+        background-color: black;
+        border: none;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        color: white;
     }
 
     .body-opacity {
@@ -339,14 +336,13 @@ footer {
         }
     
         #search {
-            color: #4d4b4b;
+            background-color: black;
+            border: none;
+            height: 50px;
             width: 100px;
-            height: 101px;
-            border-radius: 100%;
-            font-size: 1.2rem;
-            outline: none;
-            border: 10px solid  #5f1847;
-            background-color: #b1abab;
+            border: none;
+            border-radius: 10px;
+            color: white;
         }
     
         #dietary{
@@ -383,14 +379,13 @@ footer {
         }
     
         #search {
-            color: #4d4b4b;
-            width: 70px;
-            height: 71px;
-            border-radius: 100%;
-            font-size: .8rem;
-            outline: none;
-            border: 10px solid  #5f1847;
-            background-color: #b1abab;
+            background-color: black;
+            border: none;
+            height: 50px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            color: white;
         }
 
         /* .food-pic{
@@ -431,14 +426,13 @@ footer {
         }
     
         #search {
-            color: #4d4b4b;
-            width: 80px;
-            height: 81px;
-            border-radius: 100%;
-            font-size: 1rem;
-            outline: none;
-            border: 10px solid  #5f1847;
-            background-color: #b1abab;
+            background-color: black;
+            border: none;
+            height: 50px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            color: white;
         }
     
         #dietary{
