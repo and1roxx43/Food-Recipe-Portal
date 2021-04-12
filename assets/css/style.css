@@ -89,15 +89,13 @@ body {
 }
 
 #search {
-    color: #4d4b4b;
-    width: 145px;
-    height: 146px;
-    border-radius: 100%;
-    font-size: 1.2rem;
-    outline: none;
-    border: 10px solid  #5f1847;
-    background-color: #b1abab;
-    /* box-shadow: 5px 5px 5px lightgrey;  */
+    background-color: black;
+    border: none;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
 }
 
 /* Restaurants near by container buttons */
