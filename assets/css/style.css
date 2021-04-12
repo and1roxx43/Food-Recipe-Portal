@@ -309,6 +309,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .video-section{
+        max-height: 400px;
+        overflow-y: scroll;
+        width: 100%;
+    }
 
     .recipe-section{
         max-height: 400px;
@@ -455,7 +460,6 @@ footer {
          }
     }
 }
-
 
 /**Youtube Video Section**/
 .video-section{

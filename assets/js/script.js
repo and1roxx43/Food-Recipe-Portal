@@ -1,4 +1,3 @@
-\
 var mexican = document.getElementById('mexican');
 var asian = document.getElementById('asian');
 var italian = document.getElementById('italian');
