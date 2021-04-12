@@ -308,7 +308,7 @@ function showVideos(){
     else if (cuisineSelected == "indian"){
       indianVids.style.display = "block";
     }
-    else if (cuisineSelected == "burger"){
+    else if (cuisineSelected == "american"){
       comfortFoodVids.style.display = "block";
     }
   }
