@@ -234,13 +234,12 @@ var recipeApiCall = function() {
 
     fetch(apiUrl)
         .then(function(response) {
-            if (response.ok) {
-                response.json().then(function(data) {
-                    displayRecipeSection(data);
-                });
-            } else {
-                alert('Error fetching recipes: ' + response.statusText);
+            if (!response.ok) {
+                throw Error(response.message);
             }
+            return response.json();
+        }).then(function(data) {
+            displayRecipeSection(data);
         })
         .catch(function(error) {
             alert('Unable to fetch the weather details.');
