@@ -170,10 +170,7 @@ comfort.addEventListener('click', function() {
 function success(pos) {
     var crd = pos.coords;
     latitude = crd.latitude;
-    console.log(latitude);
     longitude = crd.longitude;
-    console.log(longitude);
-
 }
 
 function error(err) {
@@ -187,8 +184,6 @@ navigator.geolocation.getCurrentPosition(success, error);
 
 function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-        console.log(results.length);
-
         results.forEach(element => {
             createMarker(element);
         });
@@ -268,7 +263,6 @@ function displayRecipeSection(data) {
         recipeSection.appendChild(recipeHeading);
 
         data.hits.forEach(function(recipe) {
-            console.log(recipe);
             var recipeContainer = document.createElement('div');
             recipeContainer.id = "recipe-" + count;
             recipeContainer.setAttribute("class", 'recipe-container');
