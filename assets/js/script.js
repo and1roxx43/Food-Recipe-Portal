@@ -1,3 +1,4 @@
+\
 var mexican = document.getElementById('mexican');
 var asian = document.getElementById('asian');
 var italian = document.getElementById('italian');
@@ -37,6 +38,13 @@ const recipeAppId = '15a53fca';
 var map;
 
 var cuisineSelected = '';
+
+//Declare video variables
+var mexicanVids = document.getElementById('mexicanVid')
+var italianVids = document.getElementById('italianVid')
+var asianVids = document.getElementById('asianVid')
+var indianVids = document.getElementById('indianVid')
+var comfortFoodVids = document.getElementById('comfortFoodVid')
 
 // event click on each images
 mex.addEventListener('click', function() {
@@ -139,26 +147,19 @@ asian.addEventListener('click', function() {
 });
 
 italian.addEventListener('click', function() {
-
     Opacity();
     mapContainer.style.display = "flex";
     googleMapCall();
-
 });
 
 indian.addEventListener('click', function() {
-
     Opacity();
-
     mapContainer.style.display = "flex";
     googleMapCall();
-
 });
 
 comfort.addEventListener('click', function() {
-
     Opacity();
-
     mapContainer.style.display = "flex";
     googleMapCall();
 });
@@ -169,10 +170,7 @@ comfort.addEventListener('click', function() {
 function success(pos) {
     var crd = pos.coords;
     latitude = crd.latitude;
-    console.log(latitude);
     longitude = crd.longitude;
-    console.log(longitude);
-
 }
 
 function error(err) {
@@ -186,8 +184,6 @@ navigator.geolocation.getCurrentPosition(success, error);
 
 function callback(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-        console.log(results.length);
-
         results.forEach(element => {
             createMarker(element);
         });
@@ -210,11 +206,8 @@ function createMarker(place) {
 
 // Close map event
 closeMap.addEventListener('click', function() {
-
     mapContainer.setAttribute("disabled", true);
-
     location.reload();
-
     findNearBy.forEach(element => {
         element.setAttribute("disabled", true);
     })
@@ -223,6 +216,7 @@ closeMap.addEventListener('click', function() {
 //adding button evenet listener
 btnSearch.addEventListener('click', function() {
     recipeApiCall();
+    showVideos();
 });
 
 /**  Recipe api call */
@@ -269,7 +263,6 @@ function displayRecipeSection(data) {
         recipeSection.appendChild(recipeHeading);
 
         data.hits.forEach(function(recipe) {
-            console.log(recipe);
             var recipeContainer = document.createElement('div');
             recipeContainer.id = "recipe-" + count;
             recipeContainer.setAttribute("class", 'recipe-container');
@@ -288,5 +281,27 @@ function displayRecipeSection(data) {
             recipeContainer.appendChild(recipeLink);
             recipeSection.appendChild(recipeContainer);
         });
+    }
+}
+
+/**
+ * function show youtube videos
+ */
+function showVideos() {
+    mexicanVids.style.display = "none";
+    italianVids.style.display = "none";
+    asianVids.style.display = "none";
+    indianVids.style.display = "none";
+    comfortFoodVids.style.display = "none";
+    if (cuisineSelected == "mexican") {
+        mexicanVids.style.display = "block";
+    } else if (cuisineSelected == "italian") {
+        italianVids.style.display = "block";
+    } else if (cuisineSelected == "asian") {
+        asianVids.style.display = "block";
+    } else if (cuisineSelected == "indian") {
+        indianVids.style.display = "block";
+    } else if (cuisineSelected == "american") {
+        comfortFoodVids.style.display = "block";
     }
 }
