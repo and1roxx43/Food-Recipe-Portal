@@ -296,6 +296,47 @@ footer {
     }
 }
 
+
+/**Youtube Video Section**/
+.video-section{
+    max-height: 700px;
+    overflow-y: scroll;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.video-container {
+    height: 280px;
+    width: 560px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: left;
+}
+#mexicanVid {
+    display: none;
+}
+#italianVid {
+    display: none;
+}
+#asianVid {
+    display: none;
+}
+#indianVid {
+    display: none;
+}
+#comfortFoodVid {
+    display: none;
+}
+#videoRights {
+    color: black;
+}
+.video-item {
+    width: inherit;
+    height: inherit;
+    display: inline;
+}
+
 @media screen and (max-width:1024px) {
     @media screen and (max-height: 768px){
         .body-opacity {
@@ -310,7 +351,7 @@ footer {
         flex-direction: column;
     }
     .video-section{
-        max-height: 400px;
+        max-height: 400px ;
         overflow-y: scroll;
         width: 95%;
     }
@@ -458,44 +499,4 @@ footer {
              height: 50px;
          }
     }
-}
-
-/**Youtube Video Section**/
-.video-section{
-    max-height: 700px;
-    overflow-y: scroll;
-    width: 50%;
-    text-align: center;
-    padding: 10px;
-}
-.video-container {
-    height: 280px;
-    width: 560px;
-    margin: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    text-align: left;
-}
-#mexicanVid {
-    display: none;
-}
-#italianVid {
-    display: none;
-}
-#asianVid {
-    display: none;
-}
-#indianVid {
-    display: none;
-}
-#comfortFoodVid {
-    display: none;
-}
-#videoRights {
-    color: black;
-}
-.video-item {
-    width: inherit;
-    height: inherit;
-    display: inline;
 }

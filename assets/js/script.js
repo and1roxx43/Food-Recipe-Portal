@@ -233,17 +233,17 @@ var recipeApiCall = function() {
         apiUrl = 'https://api.edamam.com/search?q=' + cuisineSelected + '&app_id=' + recipeAppId + '&app_key=' + foodAPIKey + '&from=0&to=5&cuisineType=' + cuisineSelected;
 
     fetch(apiUrl)
-        .then(function(response) {
-            if (!response.ok) {
-                throw Error(response.message);
-            }
-            return response.json();
-        }).then(function(data) {
-            displayRecipeSection(data);
-        })
-        .catch(function(error) {
-            alert('Unable to fetch the weather details.');
-        });
+    .then(function(response) {
+        if (!response.ok) {
+            throw Error(response.message);
+        }
+        return response.json();
+    }).then(function(data) {
+        displayRecipeSection(data);
+    })
+    .catch(function(error) {
+        alert('Unable to fetch the weather details.');
+    });
 }
 
 /**
