@@ -9,6 +9,6 @@ Below are the features
 - filter vegetarian, gluten-free options
 - Display youtube recipes for various cuisine types
 
-![Alt text](assets/images/s1.png?raw=true “Screenshot 1”)
+![Alt text](assets/images/s1.jpg?raw=true “Screenshot 1”)
 
 The application can be accessed at: https://and1roxx43.github.io/Food-Recipe-Portal/
