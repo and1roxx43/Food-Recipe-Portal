@@ -37,6 +37,13 @@ var map;
 
 var cuisineSelected = '';
 
+//Declare video variables
+const mexicanVids = document.getElementById('mexicanVid')
+const italianVids = document.getElementById('italianVid')
+const asianVids = document.getElementById('asianVid')
+const indianVids = document.getElementById('indianVid')
+const comfortFoodVids = document.getElementById('comfortFoodVid')
+
 // event click on each images
 mex.addEventListener('click', function(){
     mexican.setAttribute('style', 'display: inline;');
@@ -211,10 +218,11 @@ closeMap.addEventListener('click', function(){
     })
   });
 
-//adding button evenet listener
+//adding button event listener
 
 btnSearch.addEventListener('click', function(){
   recipeApiCall();
+  showVideos();
 });
 
   /**  Recipe api call */
@@ -282,3 +290,25 @@ function displayRecipeSection( data ){
   }
   
 }
+function showVideos(){
+  mexicanVids.style.display = "none";
+  italianVids.style.display = "none";
+  asianVids.style.display = "none";
+  indianVids.style.display = "none";
+  comfortFoodVids.style.display = "none";
+    if (cuisineSelected == "mexican"){
+      mexicanVids.style.display = "block";
+    }
+    else if (cuisineSelected == "italian"){
+      italianVids.style.display = "block";
+    }
+    else if (cuisineSelected == "asian"){
+      asianVids.style.display = "block";
+    }
+    else if (cuisineSelected == "indian"){
+      indianVids.style.display = "block";
+    }
+    else if (cuisineSelected == "burger"){
+      comfortFoodVids.style.display = "block";
+    }
+  }
