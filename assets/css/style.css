@@ -305,6 +305,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 .video-container {
     height: 280px;
     width: 560px;
@@ -313,24 +314,32 @@ footer {
     border-radius: 5px;
     text-align: left;
 }
+
 #mexicanVid {
     display: none;
 }
+
 #italianVid {
     display: none;
 }
+
 #asianVid {
     display: none;
 }
+
 #indianVid {
     display: none;
 }
+
 #comfortFoodVid {
     display: none;
 }
+
 #videoRights {
     color: black;
+    display: none;
 }
+
 .video-item {
     width: inherit;
     height: inherit;
