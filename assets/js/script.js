@@ -291,15 +291,15 @@ function showVideos() {
     asianVids.style.display = "none";
     indianVids.style.display = "none";
     comfortFoodVids.style.display = "none";
-    if (cuisineSelected == "mexican") {
+    if (cuisineSelected === "mexican") {
         mexicanVids.style.display = "block";
-    } else if (cuisineSelected == "italian") {
+    } else if (cuisineSelected === "italian") {
         italianVids.style.display = "block";
-    } else if (cuisineSelected == "asian") {
+    } else if (cuisineSelected === "asian") {
         asianVids.style.display = "block";
-    } else if (cuisineSelected == "indian") {
+    } else if (cuisineSelected === "indian") {
         indianVids.style.display = "block";
-    } else if (cuisineSelected == "american") {
+    } else if (cuisineSelected === "american") {
         comfortFoodVids.style.display = "block";
     }
 }
