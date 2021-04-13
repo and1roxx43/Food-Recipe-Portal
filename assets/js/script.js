@@ -44,6 +44,7 @@ var italianVids = document.getElementById('italianVid')
 var asianVids = document.getElementById('asianVid')
 var indianVids = document.getElementById('indianVid')
 var comfortFoodVids = document.getElementById('comfortFoodVid')
+var vidRights = document.getElementById('videoRights')
 
 // event click on each images
 mex.addEventListener('click', function() {
@@ -291,15 +292,21 @@ function showVideos() {
     asianVids.style.display = "none";
     indianVids.style.display = "none";
     comfortFoodVids.style.display = "none";
+    vidRights.style.display = "none";
     if (cuisineSelected === "mexican") {
         mexicanVids.style.display = "block";
+        vidRights.style.display = "block";
     } else if (cuisineSelected === "italian") {
         italianVids.style.display = "block";
+        vidRights.style.display = "block";
     } else if (cuisineSelected === "asian") {
         asianVids.style.display = "block";
+        vidRights.style.display = "block";
     } else if (cuisineSelected === "indian") {
         indianVids.style.display = "block";
+        vidRights.style.display = "block";
     } else if (cuisineSelected === "american") {
         comfortFoodVids.style.display = "block";
+        vidRights.style.display = "block";
     }
 }
