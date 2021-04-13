@@ -243,7 +243,6 @@ var recipeApiCall = function() {
         displayRecipeSection(data);
     })
     .catch(function(error) {
-        alert('Unable to fetch the weather details.');
     });
 }
 
